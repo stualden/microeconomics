@@ -1,0 +1,135 @@
+%\documentclass{article}
+\documentclass{exam}
+\author{}
+
+
+\date{}
+\usepackage{amsmath}
+\usepackage[margin=2.5cm]{geometry}
+
+\title{Microeconomics Cheat-Sheet}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Preliminaries}
+
+Basic economic terminology:
+
+% \begin{equation}
+%     Y = C + I + G + NX
+% \end{equation}
+
+% where:
+\begin{itemize}
+    \item Real v Nominal Prices
+    \item Positive v Normative Analysis
+    \item Definition of a market; market segmentation
+\end{itemize}
+
+% GDP can also be viewed as total \underline{production} (hence its name) or total \underline{income} over the period.
+
+\section{Supply \& Demand}
+
+% The Cobb-Douglas production function is a simple model of the relation between
+% inputs and output in an economy:
+
+% \begin{equation}
+%     Y = A K^{\alpha} L^{1-\alpha}
+% \end{equation}
+
+% where:
+
+Some more terminology:
+
+\begin{itemize}
+    \item Supply Curve, Demand Curve
+    \item Market mechanism and equilibrium price and quantity
+    \item Elasticity in general
+    \item Substitute goods and complementary goods
+\end{itemize}
+
+The Cobb-Douglas formula is perhaps the simplest possible function of K and L
+which satisfies three reasonable requirements:
+
+\begin{itemize}
+    \item Increases in inputs ($K$ and/or $L$) generate increases in outputs ($Y$)
+    \item There are diminishing returns to $K$ and $L$
+    \item There are constant returns to scale - if $K$ and $L$ both rise by a factor of
+          $\lambda$ then $Y$ rises by $\lambda$ too.
+\end{itemize}
+
+
+Frequently it's more useful to express Y and K on a per-labor-unit ($L$) basis.  $Y/L$ is called
+the "average product of labor" and $K/L$ is called "capital intensity."
+Dividing both sides of equation (2) by $L$ produces
+
+\begin{equation}
+    \frac{Y}{L} = A \left(\frac{K}{L}\right)^{\alpha}
+\end{equation}
+
+If we write $Y/L$ as $y$ and $K/L$ as $k$, the formula becomes very simple:
+
+\begin{equation}
+    y = A k^{\alpha}
+\end{equation}
+
+\section{The Solow Growth Model}
+
+In the Solow model, capital accumulation is determined by the savings rate and
+the depreciation rate. Its simplifying assumption is that savings equals investment, and that
+savings is a constant percentage of output ($s$).  The equation for capital accumulation from
+time $t$ to time $t+1$ is:
+
+\begin{equation}
+    K_{t+1} = (1-\delta) K_t + sY_t
+\end{equation}
+
+where:
+\begin{itemize}
+    \item $K$ is the capital stock,
+    \item $\delta$ is the depreciation rate of capital,
+    \item $s$ is the savings rate (the portion of production converted to capital),
+    \item $Y$ is GDP
+\end{itemize}
+
+By substituting $Y = A K^{\alpha} L^{1-\alpha}$ for $Y$ in equation 5, rearranging terms, and setting
+$K_{t+1} = K_t$, we get a number of useful "steady-state" identities:
+
+\begin{itemize}
+    \item Capital per worker:  $\frac{K_{ss}}{L}=\left(\frac{s}{\delta}A\right)^\frac{1}{1-\alpha}$
+    \item Capital to output: $\left(\frac{K}{L}\right)_{ss} = \frac{s}{\delta}$
+    \item Growth rate in $\frac{Y}{L}$:  $\frac{(1+g_Y)}{(1+g_L)} = (1+g_A)^\frac{1}{1-\alpha}$
+\end{itemize}
+
+
+That last identify makes it clear that the steady-state growth rate relies completely on $A$ and
+is independent of $s$ and $\delta$.
+
+\section{Unemployment}
+
+The progression of unemployment $u$ can be modeled as
+
+\begin{equation}
+    u_{t+1} = u_t + se_t - au_t
+\end{equation}
+
+where:
+\begin{itemize}
+    \item $u$ is the unemployment rate
+    \item $e$ is the employment rate (ignoring inactives)
+    \item $s$ is the separation rate (probability of termination)
+    \item $a$ is the accession rate (probability of hire)
+\end{itemize}
+
+Substituting $(1-u)$ for $e$ and solving for the steady-state level of
+unemployment, we get:
+
+\begin{equation}
+    u_{ss} = \frac{s}{s+a}
+\end{equation}
+
+
+\end{document}
