@@ -2,7 +2,6 @@
 \documentclass{exam}
 \author{}
 
-
 \date{}
 \usepackage{amsmath}
 \usepackage[margin=2.5cm]{geometry}
@@ -13,124 +12,211 @@
 
 \maketitle
 
-
 \section{Preliminaries}
 
-Basic economic terminology:
-
-% \begin{equation}
-%     Y = C + I + G + NX
-% \end{equation}
-
-% where:
 \begin{itemize}
-    \item Real v Nominal Prices - real have been adjusted to a particular year to remove the impact of inflation
-    \item Positive v Normative Analysis - positive is "testable," normative is not
-    \item Definition of a market; market segmentation
+  \item Real v Nominal Prices - Nominal are as-published; real have been adjusted to a particular year to remove the impact of inflation.  Ratios of indexes (such as CPI or GDP Deflator) provide the factors needed to determine inflation rates and "move" prices from one period to another.
+  \item Positive v Normative Analysis - positive is "testable," normative is not
+  \item A market - buyers and sellers interacting to exchange goods, services
+  \item Competitive market - no single seller or small group of sellers has full control over price
+  \item Market segmentation - quality bikes and cheap bikes are distinct markets
+  \item The general formula for compound growth is
+    $$A \cdot (1+j)^n = S$$
+    where A is a beginning amount, j is the growth rate (as a decimal) per period, and n is the number of periods.
 \end{itemize}
-
-% GDP can also be viewed as total \underline{production} (hence its name) or total \underline{income} over the period.
 
 \section{Supply \& Demand}
 
-% The Cobb-Douglas production function is a simple model of the relation between
-% inputs and output in an economy:
-
-% \begin{equation}
-%     Y = A K^{\alpha} L^{1-\alpha}
-% \end{equation}
-
-% where:
-
-Some more terminology:
-
 \begin{itemize}
-    \item Supply Curve, Demand Curve - quantity supplied and demanded at a given price
-    \item Market mechanism and equilibrium price and quantity - pressure to gravitate to a point where supply and demand quantity are equal
-    \item Elasticity in general - sensitivity of a variable to change in another variable.
-    \item Substitute goods - price increase in one produces increase in demand for the other
-    \item Complementary goods - price increase in one produces decrease in demand for the other
+  \item Supply Curve, Demand Curve - quantity supplied and demanded at a given price.  Typically quantity is on the horizontal axis, price on the vertical.
+  \item Market mechanism and equilibrium price and quantity - pressure towards a point where supply and demand quantity are equal (curves cross)
+  \item Elasticity in general - sensitivity of a variable to change in another variable. Positive elasticity means the two variables vary in same direction; negative elasticity means opposite directions.  High absolute value means very sensitive; low absolute value means very insensitive.
+  \item In economics, we generally look at elasticities between quantity and some other variable - typically price or income, but could also be price of other goods (cross-price elasticities)
+  \item A point elasticity between, say, $P$ and $Q$, is defined as $P/Q*dQ/dP$
+  \item An arc elasticity can be calculated using two points:  $\overline{P}/\overline{Q}*\Delta Q / \Delta P$.  $\overline{P}$ and $\overline{Q}$ refer to \underline{average} values of P and Q.
+  \item Elasticity can be different in the short run than in the long run; think of durables (cyclical businesses - more elastic in the short run) and non-durables (more elastic in the long run)
+  \item Substitute goods - price increase in one produces \underline{increase} in quantity demanded for the other
+  \item Complementary goods - price increase in one produces \underline{decrease} in quantity demanded for the other
 \end{itemize}
 
-The Cobb-Douglas formula is perhaps the simplest possible function of K and L
-which satisfies three reasonable requirements:
+\section{Consumer Behavior}
 
 \begin{itemize}
-    \item Increases in inputs ($K$ and/or $L$) generate increases in outputs ($Y$)
-    \item There are diminishing returns to $K$ and $L$
-    \item There are constant returns to scale - if $K$ and $L$ both rise by a factor of
-          $\lambda$ then $Y$ rises by $\lambda$ too.
+  \item Market basket or bundle - collection of various quantities of various goods and services
+  \item Characteristics of "rational" (theoretical) consumer behavior:
+    \begin{itemize}
+      \item Completeness - all market baskets can be ranked in terms of preference
+      \item Transitive property - if baskets $A > B$ and $B > C$ then $A > C$
+      \item More is better than less
+    \end{itemize}
+  \item Utility - a numerical measure of "satisfaction" or "happiness" in an economic sense.  Understood to be used only ordinally (for ranking), not cardinally (assigning value).
+  \item Indifference or (Equal-)Utility curve - collection of all combinations of goods/services in a basket that have equal utility
+  \item Indifference/utility map - collection of all possible curves at every level of utility
+  \item Budget constraint - resource (income) limitation on how much can be consumed
+  \item  Budget line - set of all possible combinations of consumption of two goods at a particular budget level.  The slope
+    of a budget line is the price ratio, which is $P_X / P_Y$.
+  \item Marginal utility - utility gained from one additional unit of a good.  For most goods, marginal utility is
+    eventually diminishing (decreasing) as quantity rises.
+  \item Marginal rate of substitution (MRS)- quantity given up for one good to obtain one more unit of another good, with
+    overall utility remaining constant.  MRS can be derived in several ways:
+    \begin{itemize}
+      \item MRS is the amount of one good someone is willing to give up in order to get one unit
+        of the other good.
+      \item In regular X/Y notation, it's $-\Delta Y / \Delta X$.  The phrase for this would be "marginal rate
+        of substitution of X for Y." The minus sign is needed to make MRS a positive number, since the
+        slope of the indifference curve is negative.
+      \item From a calculus perspective, it's just $-dY/dX$.
+    \end{itemize}
+  \item For most goods, the MRS decreases as the quantity of the good swapped out gets smaller.  This
+    is called diminishing MRS, and it's consistent with diminishing marginal utility.  It means that the utility
+    curve is convex (concave up).
+  \item Consumer choice - tries to maximize utility subject to the budget constraint.  The optimal point is where
+    the highest utility curve is tangent to budget line.
+  \item That means that at an optimal point on the curve, tangent to a budget line, MRS is also $P_X / P_Y$
+  \item MRS can also be viewed as a ratio of marginal utilities:  $MU_X / MU_Y$
+  \item Finally, at the optimal point, the marginal utilities per dollar are also equal - that is, $MU_X / P_X = MU_Y / P_Y$
+
 \end{itemize}
 
-
-Frequently it's more useful to express Y and K on a per-labor-unit ($L$) basis.  $Y/L$ is called
-the "average product of labor" and $K/L$ is called "capital intensity."
-Dividing both sides of equation (2) by $L$ produces
-
-\begin{equation}
-    \frac{Y}{L} = A \left(\frac{K}{L}\right)^{\alpha}
-\end{equation}
-
-If we write $Y/L$ as $y$ and $K/L$ as $k$, the formula becomes very simple:
-
-\begin{equation}
-    y = A k^{\alpha}
-\end{equation}
-
-\section{The Solow Growth Model}
-
-In the Solow model, capital accumulation is determined by the savings rate and
-the depreciation rate. Its simplifying assumption is that savings equals investment, and that
-savings is a constant percentage of output ($s$).  The equation for capital accumulation from
-time $t$ to time $t+1$ is:
-
-\begin{equation}
-    K_{t+1} = (1-\delta) K_t + sY_t
-\end{equation}
-
-where:
-\begin{itemize}
-    \item $K$ is the capital stock,
-    \item $\delta$ is the depreciation rate of capital,
-    \item $s$ is the savings rate (the portion of production converted to capital),
-    \item $Y$ is GDP
-\end{itemize}
-
-By substituting $Y = A K^{\alpha} L^{1-\alpha}$ for $Y$ in equation 5, rearranging terms, and setting
-$K_{t+1} = K_t$, we get a number of useful "steady-state" identities:
+\pagebreak
+\section{Individual \& Market Demand}
 
 \begin{itemize}
-    \item Capital per worker:  $\frac{K_{ss}}{L}=\left(\frac{s}{\delta}A\right)^\frac{1}{1-\alpha}$
-    \item Capital to output: $\left(\frac{K}{L}\right)_{ss} = \frac{s}{\delta}$
-    \item Growth rate in $\frac{Y}{L}$:  $\frac{(1+g_Y)}{(1+g_L)} = (1+g_A)^\frac{1}{1-\alpha}$
+  \item Price-consumption curve - locus of optimal points of consumption at each price level
+  \item Points on price-consumption curve map directly to an individual demand curve
+  \item Income-consumption curve - locus of optimal points of consumption, for a particular price, at all possible income levels
+  \item Points on income-consumption curve map directly to points on demand curves reflecting varying levels of income
+  \item Individual demand curves can be summed to derive aggregate market demand curves.  Note that different groups of consumers may have dramatically different demand.  Also note the theoretical possibility of "kinks" in the market demand curve.
+  \item Linear demand curves have varying elasticity at every point along the curve. Isoelastic demand curves have the same elasticity at every point
+  \item Normal goods - quantity demanded rises as income rises
+  \item Neutral goods - quantity demanded unchanged as income rises
+  \item Inferior goods - quantity demanded falls as income rises
+  \item Engel Curve - graph of quantity demanded (X-axis) versus income (Y-axis).
+  \item Substitution effect - Drop in price pushes consumer toward that good, away from other goods.
+  \item Income effect - Drop in price raises purchasing power of consumer for all goods.
+  \item Speculative demand - demand driven only by belief that price of the good will rise in the future.
+  \item Price elasticity of demand is negative.  Absolute value less than 1 is called inelastic, absolute value greater than 1 is called elastic, -1 is called unit elastic.
+  \item Consumer surplus - difference between what a consumer would be willing to pay at each quantity and what he's actually paying at his equilibrium quantity.
+  \item Network Externalities - impact of other people's purchases on your demand.  Could be positive (bandwagon) or negative (snob) or nonexistent.
+  \item Empirical estimate of demand - can use polls/surveys, experiments to gather data, fit to curves (linear, isoelastic, or other).
 \end{itemize}
 
+\section{Uncertainty in Consumer Behavior (we skipped)}
 
-That last identify makes it clear that the steady-state growth rate relies completely on $A$ and
-is independent of $s$ and $\delta$.
+\section{Production}
 
-\section{Unemployment}
-
-The progression of unemployment $u$ can be modeled as
-
-\begin{equation}
-    u_{t+1} = u_t + se_t - au_t
-\end{equation}
-
-where:
 \begin{itemize}
-    \item $u$ is the unemployment rate
-    \item $e$ is the employment rate (ignoring inactives)
-    \item $s$ is the separation rate (probability of termination)
-    \item $a$ is the accession rate (probability of hire)
+  \item The \textbf{Firm} - an organized group of people working together.  Advantages include
+    \begin{itemize}
+      \item Coordination - managers leading teams
+      \item Specialization - permits increased quality, efficiency
+      \item Economies of Scale - if not "too big," a larger team is more efficient
+    \end{itemize}
+  \item Production turning inputs into outputs.  Broad categories of inputs include
+    \begin{itemize}
+      \item \textbf{Labor (L)}
+      \item \textbf{Capital (K)}
+      \item \textbf{Materials}
+    \end{itemize}
+  \item Time horizon - \textbf{short-term} means at least one input is fixed, can't be changed.  \textbf{Long-term} means
+    all inputs can be adjusted.
+  \item Production Function - maximum quantity that can be produced from a particular set of inputs. Simplest form we'll use
+    for analysis is $q = F(K,L)$.
+  \item Short Term analysis:
+    \begin{itemize}
+      \item We have $q = F(K,L)$ where K is fixed and L is variable
+      \item $q$ is \textbf{total} production (quantity)
+      \item $q/L$ is \textbf{average product of labor}
+      \item $dq/dL$ is \textbf{marginal product of labor}
+    \end{itemize}
+  \item Typical behavior of each measure as L increases:
+    \begin{itemize}
+      \item Marginal product rises quickly at first, then falls, eventually goes to zero (and then negative). This is the
+        \textbf{diminishing marginal returns} concept that we've seen before.
+      \item Average product rises, peaks when average product equals marginal product
+      \item Total product rises until marginal product goes to zero
+    \end{itemize}
+  \item Long Term analysis:
+    \begin{itemize}
+      \item Assume a production function $q=F(K,L)$ where both $K$ and $L$ can be adjusted
+      \item A given level of $q$ can be achieved with different levels of $K$ and $L$ - more $K$ means less $L$ and
+        vice versa
+      \item On a graph of $K$ against $L$, the curve representing all combinations that produce a particular level of $q$ is
+        called an \textbf{isoquant} ("same quantity")
+      \item The measure used for the "tradeoff" between $K$ and $L$ is called the marginal rate of technical
+        substitution (\textbf{MRTS}) - in a formula, $MRTS = -\Delta K / \Delta L$
+      \item Analogous to MRS on an indifference curve - the amount by which you can reduce K for a one unit increase in L and maintain the same $q$. Special (somewhat artificial) cases of MRTS:
+        \begin{itemize}
+          \item \textbf{Fixed Proportion} - $K$ and $L$ are perfect substitutes, so isoquant is a straight line
+          \item \textbf{Perfect Complements} - Isoquant is "L-shaped" - increase of $K$ only useful with corresponding increase in $L$
+
+        \end{itemize}
+    \end{itemize}
 \end{itemize}
 
-Substituting $(1-u)$ for $e$ and solving for the steady-state level of
-unemployment, we get:
+\section{The Cost of Production}
 
-\begin{equation}
-    u_{ss} = \frac{s}{s+a}
-\end{equation}
+\begin{itemize}
+  \item Accounting Cost - primarily retrospective, and focused on reporting of profitability and financial strength
+  \item Economic Cost - broader look, and includes opportunity cost (cost of activities given up in order to pursue other activities)
+  \item Categories of Economic Cost:
+    \begin{itemize}
+      \item \textbf{Fixed Costs} (FC) - Don't change with production, can't be eliminated except by shutting down operation (or going out of business)
+      \item \textbf{Variable Costs} (VC) - change in step with production
+      \item \textbf{Total Costs} (TC) - equal to FC + VC
 
+    \end{itemize}
+  \item Just like so many other economic measures, we have \textbf{total}, \textbf{average} and \textbf{marginal} versions
+    of FC, VC, and TC.  The marginal cost curve crosses the average variable cost and
+    the average total cost curves at their minima.
+  \item In our simple model, the cost of labor is $wL$ (the wage rate times the quantity of labor)
+  \item Similarly, the cost of capital is $rK$, where $K$ is the quantity of capital and $r$ is a special rate called the \textbf{User
+    Cost of Capital}.  Think of it as the rate for "renting" the capital.  If instead the capital is purchased, we estimate the user cost of
+    cost of capital as depreciation plus interest cost, or $r = \delta + i$.
+  \item In our simple model, the total cost as a function of output is $TC(q) = wL + rK$.  For a particular level of TC,
+    if we graph all combinations of $L$ and $K$, we call that an \textbf{isocost line}.
+  \item The optimal mix of $L$ and $K$ - that is, the combination that produces the target $q$ at the lowest possible cost - is the point
+    at which the isocost line is tangent to the isoquant.  In formula terms,
+    $$MRTS = -\Delta K / \Delta L = w / r = MP_L / MP_K$$
+    where $MP_L$ and $MP_K$ are the marginal product of labor and capital, respectively.
+  \item A long run cost curve is the locus of optimal production points as production increases.  If the mix of K and L remains at
+    the same proportion, we have returns to scale (increasing, constant, or decreasing).  If the mix of K and L varies, we call it (
+    more generally) \textbf{economies of scale}.
+
+\end{itemize}
+
+\section{Profit Maximization and Competitive Supply}
+
+\begin{itemize}
+  \item A \textbf{Perfectly Competitive Market} satisfies three requirements:
+    \begin{itemize}
+      \item Suppliers and consumers are all "price-takers"- there is no unilateral control over market price.  Each seller see a horizontal
+        demand curve, even though the market demand curve is negatively sloped.
+      \item The product is homogeneous - no differentiation between one supplier's product and another's
+      \item There is free entry to and exit from the market - no barriers whatsoever
+    \end{itemize}
+  \item \textbf{Profit Maximization} is assumed to be the goal driving firm behavior.  Although we see plenty of exceptions in practice, especially
+    short-term, overall this is a reasonable approximation of market behavior.
+  \item Profit maximization occurs when \textbf{marginal revenue equals marginal cost} ($MR = MC$).
+
+\end{itemize}
+
+\section{The Analysis of Competitive Markets}
+
+\begin{itemize}
+  \item \textbf{Consumer Surplus}
+    \begin{itemize}
+      \item The sum of all situations where consumers would pay more but don't have to
+      \item On a supply/demand graph, the area under the demand curve, above the price line, and to the left of the quantity line
+    \end{itemize}
+  \item \textbf{Producer Surplus}
+    \begin{itemize}
+      \item The sum of all situations where producers would sell for less but don't have to
+      \item On a supply/demand graph, the area under the price line, above the supply curve, and to the left of the quantity line
+    \end{itemize}
+  \item The sum of consumer and producer surplus is a measure of overall "welfare" - the benefit of being a part of a market
+  \item The impact of any market intervention (a price floor or ceiling, an import tariff or quota, etc.) can be evaluated in terms of the net
+    overall change in consumer and producer surplus
+\end{itemize}
 
 \end{document}
