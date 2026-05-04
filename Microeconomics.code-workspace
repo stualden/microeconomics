@@ -4,7 +4,7 @@
 			"path": "."
 		},
 		{
-			"path": "../../texmf/tex/latex"
+			"path": "../../../texmf/tex/latex"
 		}
 	]
 }
